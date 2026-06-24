@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Patla Khawa High School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* --- ABOUT PAGE INTERNAL STYLES --- */
+        .about-page-section { padding: 80px 8%; color: var(--text-bright); }
+        
+        .hero-about {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('school_10.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 5%;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 50px;
+        }
+
+        .about-content { max-width: 900px; margin: 0 auto; line-height: 1.8; }
+        .about-content h2 { margin-bottom: 20px; color: var(--neon-cyan); }
+        .about-content p { margin-bottom: 20px; color: var(--text-muted); }
+        
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .box { background: var(--panel-dark); padding: 30px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); }
+
+        @media (max-width: 768px) { .info-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <!-- 🟥 HEADER SECTION -->
+    <header class="digital-header">
+        <div class="logo-area">
+            <div class="logo-icon"></div>
+            <h2>PATLA KHAWA <span class="school-tag">HIGH SCHOOL</span></h2>
+        </div>
+        
+        <!-- Navigation Links (All sections included) -->
+        <nav class="nav-container" id="navContainer">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item "><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="teachers.html" class="nav-item"><i class="fas fa-chalkboard-teacher"></i> Teacher</a></li>
+                <li><a href="gallery.html" class="nav-item"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="admission.html" class="nav-item"><i class="fas fa-graduation-cap"></i> Admission</a></li>
+                <li><a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#about" class="nav-item active"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </ul>
+            
+            <!-- 📍 Log In & Sign Up (Perfectly Centered Inside Mobile Menu) -->
+            <div class="auth-group mobile-only">
+                <a href="#login" class="btn-signup">Log In</a>
+                <a href="#signup" class="btn-signup">Sign Up</a>
+            </div>
+        </nav>
+
+        <!-- Right Side Controls (Desktop Auth + Profile Picture Link) -->
+        <div class="header-controls">
+            <div class="auth-group desktop-only">
+                <a href="#login" class="btn-signup">Log In</a>
+            </div>
+            
+            <!-- 👤 User Profile Picture Slot -->
+            <a href="#profile" class="profile-link" title="User Profile">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Profile" class="profile-pic">
+            </a>
+
+            <!-- Animated Hamburger Menu Icon -->
+            <div class="hamburger-menu" id="hamburgerBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+    
+    <section class="about-page-section">
+        <div class="hero-about">
+            <h1>ABOUT PATLA KHAWA HIGH SCHOOL</h1>
+            <p>Empowering Minds, Shaping Tomorrow</p>
+        </div>
+
+        <div class="about-content">
+            <h2>OUR LEGACY</h2>
+            <p>Located in the serene landscapes of Patla Khawa, Khagribari, Cooch Behar, West Bengal (PIN: 736165), Patla Khawa High School stands as a beacon of academic excellence. Since our inception, we have been dedicated to providing a holistic educational experience that balances rigorous intellectual training with character building and moral growth.</p>
+            
+            <p>Our institution is more than just a school; it is a community of learners, innovators, and future leaders. We take pride in our rich tradition of academic success and our commitment to preparing students for the challenges of a rapidly changing world.</p>
+
+            <div class="info-grid">
+                <div class="box">
+                    <h3><i class="fas fa-map-marker-alt"></i> OUR LOCATION</h3>
+                    <p>Patla Khawa, Khagribari<br>District: Cooch Behar<br>West Bengal, 736165</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-star"></i> OUR VISION</h3>
+                    <p>To foster a creative and supportive learning environment that encourages students to achieve their highest potential, cultivate curiosity, and contribute positively to society.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="digital-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>PATLA KHAWA <span>HIGH SCHOOL</span></h3>
+                <p>Nurturing brilliance, innovation, and digital-first education for a brighter tomorrow.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect Portal</h4>
+                <div class="social-wrapper">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Patla Khawa High School. Engineered for excellence.</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

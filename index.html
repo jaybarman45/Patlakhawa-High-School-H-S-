@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patla Khawa High School - Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for futuristic/clean icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 🟥 HEADER SECTION -->
+    <header class="digital-header">
+        <div class="logo-area">
+            <div class="logo-icon"></div>
+            <h2>PATLA KHAWA <span class="school-tag">HIGH SCHOOL</span></h2>
+        </div>
+        
+        <!-- Navigation Links (All sections included) -->
+        <nav class="nav-container" id="navContainer">
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="teachers.html" class="nav-item"><i class="fas fa-chalkboard-teacher"></i> Teacher</a></li>
+                <li><a href="gallery.html" class="nav-item"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="admission.html" class="nav-item"><i class="fas fa-graduation-cap"></i> Admission</a></li>
+                <li><a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="about.html" class="nav-item"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </ul>
+            
+            <!-- 📍 Log In & Sign Up (Perfectly Centered Inside Mobile Menu) -->
+            <div class="auth-group mobile-only">
+                <a href="#login" class="btn-signup">Log In</a>
+                <a href="#signup" class="btn-signup">Sign Up</a>
+            </div>
+        </nav>
+
+        <!-- Right Side Controls (Desktop Auth + Profile Picture Link) -->
+        <div class="header-controls">
+            <div class="auth-group desktop-only">
+                <a href="#login" class="btn-signup">Log In</a>
+            </div>
+            
+            <!-- 👤 User Profile Picture Slot -->
+            <a href="#profile" class="profile-link" title="User Profile">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Profile" class="profile-pic">
+            </a>
+
+            <!-- Animated Hamburger Menu Icon -->
+            <div class="hamburger-menu" id="hamburgerBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- THE BODY CONTENT -->
+    
+    <!-- 🔲 HOME: PART A - HERO SECTION -->
+    <main class="main-body-workspace">
+        <section class="minimal-hero" id="home">
+            <div class="hero-tint"></div>
+            
+            <div class="hero-text-layer">
+                <h1 class="hero-headline">Patla Khawa High School</h1>
+                <p class="hero-motto">Shaping Minds. Coding Futures. Building Tomorrow.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#about" class="btn-clean btn-primary">Learn More</a>
+                    <a href="#admission" class="btn-clean btn-secondary">Admission</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 🔲 HOME: PART B - NEWS BOX (SCROLLABLE) -->
+    <section class="news-section" id="news">
+        <div class="news-header">
+            <div class="news-title-group">
+                <i class="fas fa-satellite-dish news-icon"></i>
+                <h2>LIVE UPDATE <span>TERMINAL</span></h2>
+            </div>
+            <p class="news-meta">Scroll to browse recent announcements</p>
+        </div>
+
+        <!-- 📜 Main Scrollable Terminal Window -->
+        <div class="news-scroll-box">
+            
+            <!-- News Item 1 -->
+            <div class="news-card critical">
+                <div class="card-timeline">
+                    <span class="badge badge-alert">CRITICAL</span>
+                    <span class="news-date">June 23, 2026</span>
+                </div>
+                <h3>Final Term Examination Schedule Released</h3>
+                <p>The digital copy of the final routine is now downloadable through the student dashboard. Hard copies can be collected from the office window starting tomorrow morning.</p>
+                <a href="#" class="news-link">Download Routine <i class="fas fa-angle-right"></i></a>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="news-card normal">
+                <div class="card-timeline">
+                    <span class="badge badge-info">INFO</span>
+                    <span class="news-date">June 20, 2026</span>
+                </div>
+                <h3>Inter-School Robotics Exhibition Registration</h3>
+                <p>Registration for the annual Nexus Academy Innovation Fair is officially open. Team entries must be submitted electronically to the science department before next Friday.</p>
+                <a href="#" class="news-link">Register Team <i class="fas fa-angle-right"></i></a>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="news-card normal">
+                <div class="card-timeline">
+                    <span class="badge badge-info">INFO</span>
+                    <span class="news-date">June 15, 2026</span>
+                </div>
+                <h3>Monsoon Schedule Adjustments</h3>
+                <p>Due to expected high rainfall levels, morning assembly sessions will shift into classrooms. Class timings remain completely unchanged until further notice.</p>
+                <a href="#" class="news-link">View Guidelines <i class="fas fa-angle-right"></i></a>
+            </div>
+
+            <!-- News Item 4 -->
+            <div class="news-card maintenance">
+                <div class="card-timeline">
+                    <span class="badge badge-system">SYSTEM</span>
+                    <span class="news-date">June 12, 2026</span>
+                </div>
+                <h3>Student Portal Maintenance Window</h3>
+                <p>The online grade checking platform will go offline for scheduled security updates on Saturday from 12:00 AM to 04:00 AM. Plan your submission times accordingly.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 🔲 HOME: PART C - TEACHER MARQUEE TRACK -->
+    <section class="faculty-marquee-section">
+        <div class="marquee-wrapper">
+            <div class="marquee-track" id="teacherTrack">
+                <!-- JavaScript will inject cards here automatically -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="gallery-slider-section" id="gallery">
+        <div class="gallery-header-row">
+            <div class="gallery-title-block">
+                <i class="fas fa-project-diagram spectrum-icon"></i>
+                <h2>CAMPUS <span>SPECTRUM</span></h2>
+                <p>Click any visual capsule to launch the dedicated gallery module</p>
+            </div>
+            <a href="gallery.html" class="btn-gallery-gateway">
+                View Full Archive <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+
+        <div class="slider-viewport-container">
+            
+            <button class="nav-arrow left-arrow" id="slidePrev" aria-label="Previous Slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nav-arrow right-arrow" id="slideNext" aria-label="Next Slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="slider-carousel-belt" id="imageBelt">
+                
+                <a href="gallery.html?img=1" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_1.jpg" alt="Gallery Image 1">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 1</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="gallery.html?img=2" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_2.jpg" alt="Gallery Image 2">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 2</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="gallery.html?img=3" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_3.jpg" alt="Gallery Image 3">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 3</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="gallery.html?img=4" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_4.jpg" alt="Gallery Image 4">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 4</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="gallery.html?img=5" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_5.jpg" alt="Gallery Image 5">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 5</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="gallery.html?img=6" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_6.jpg" alt="Gallery Image 6">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 6</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="gallery.html?img=7" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_7.jpg" alt="Gallery Image 7">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 7</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="gallery.html?img=8" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_8.jpg" alt="Gallery Image 8">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 8</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="gallery.html?img=9" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_9.jpg" alt="Gallery Image 9">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 9</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="gallery.html?img=10" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_10.jpg" alt="Gallery Image 10">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 10</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="gallery.html?img=11" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_11.jpg" alt="Gallery Image 11">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 11</span>
+                        </div>
+                    </div>
+                </a>                
+                <a href="gallery.html?img=12" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_12.jpg" alt="Gallery Image 12">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 12</span>
+                        </div>
+                    </div>
+                </a>                
+                <a href="gallery.html?img=13" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_13.jpg" alt="Gallery Image 13">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 13</span>
+                        </div>
+                    </div>
+                </a>                
+                <a href="gallery.html?img=14" class="gallery-slide-card">
+                    <div class="slide-media-wrapper">
+                        <img src="school_14.jpg" alt="Gallery Image 14">
+                        <div class="slide-overlay-glow">
+                            <span class="capsule-tag">GALLERY IMAGE 14</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔲 HOME: PART E - COMPACT HORIZONTAL ADMISSION BANNER -->
+    <section class="admission-banner-section" id="admission">
+        <a href="admission.html" class="admission-compact-bar" title="Click to launch official Admission Terminal">
+            
+            <!-- Glow FX Accents -->
+            <div class="banner-glow-trace"></div>
+
+            <!-- Left: Quick Info Pulse Group -->
+            <div class="banner-meta-side">
+                <div class="banner-live-badge">
+                    <span class="pulse-dot-mini"></span> LIVE SECURE PORTAL
+                </div>
+                <h2>ADMISSIONS <span>2026-27</span></h2>
+            </div>
+
+            <!-- Center: Split Mini-Replica Input Mockups -->
+            <div class="banner-mock-inputs">
+                <div class="mini-field">
+                    <span>Applicant Name...</span>
+                </div>
+                <div class="mini-field select-type">
+                    <span>Select Grade</span>
+                </div>
+            </div>
+
+            <!-- Right: Action Launch Trigger -->
+            <div class="banner-action-side">
+                <div class="btn-mini-launch">
+                    <span>APPLY NOW</span>
+                    <i class="fas fa-rocket rocket-tilt"></i>
+                </div>
+            </div>
+
+        </a>
+    </section>
+
+    <!-- 🔲 HOME: PART F - CLEAN CONTACT SECTION -->
+    <section class="clean-contact-section" id="contact">
+        
+        <!-- Simple, Clear Section Header -->
+        <div class="clean-section-header">
+            <h2>CONTACT <span>US</span></h2>
+            <div class="title-underline"></div>
+            <p>Try our quick message preview below, or visit the main contact page.</p>
+        </div>
+
+        <div class="clean-contact-grid">
+            
+            <!-- Left Side: Clean Typable Form Mockup -->
+            <div class="clean-form-panel">
+                <div class="clean-input-group">
+                    <label>Full Name</label>
+                    <div class="clean-input-wrapper">
+                        <i class="fas fa-user clean-icon"></i>
+                        <input type="text" placeholder="Enter your name..." class="clean-live-input">
+                    </div>
+                </div>
+
+                <div class="clean-input-group">
+                    <label>Email Address</label>
+                    <div class="clean-input-wrapper">
+                        <i class="fas fa-envelope clean-icon"></i>
+                        <input type="email" placeholder="name@domain.com" class="clean-live-input">
+                    </div>
+                </div>
+
+                <div class="clean-input-group">
+                    <label>Message</label>
+                    <div class="clean-input-wrapper">
+                        <i class="fas fa-comment-alt clean-icon textarea-icon"></i>
+                        <textarea placeholder="Type your message here..." class="clean-live-input clean-textarea"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Details & Learn More Button -->
+            <div class="clean-info-panel">
+                <h3>Get in Touch</h3>
+                <p class="info-desc">Reach out to Patla Khawa High School administration directly.</p>
+                
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="info-icon-box"><i class="fas fa-envelope-open"></i></div>
+                        <div class="info-text">
+                            <span class="info-label">Email</span>
+                            <span class="info-value">info@patlakhawahighschool.edu</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon-box"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info-text">
+                            <span class="info-label">Phone</span>
+                            <span class="info-value">+880 17XX-XXXXXX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🌐 Clean Learn More Button -->
+                <a href="contact.html" class="clean-btn-learn-more">
+                    LEARN MORE <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 🔲 HOME: PART G - ABOUT US INTRO GATEWAY -->
+    <section class="about-gateway-section" id="about">
+        <div class="about-gateway-container">
+            
+            <!-- Left Side: Visual/Graphic Element -->
+            <div class="about-visual-box">
+                <div class="about-glow-blob"></div>
+                <img src="school_10.jpg" alt="About Us visual">
+            </div>
+
+            <!-- Right Side: Narrative Content -->
+            <div class="about-content-box">
+                <span class="section-tag"><i class="fas fa-microchip"></i> MISSION STATEMENT</span>
+                <h2>SHAPING FUTURES WITH <span>EXCELLENCE</span></h2>
+                <p class="about-summary-text">
+                    At Patla Khawa High School, we bridge the gap between traditional values and modern digital literacy. Our institution is dedicated to fostering an environment where students don't just learn—they innovate. We provide the structural foundation for tomorrow's leaders through a blend of rigorous academics, character development, and advanced technological integration.
+                </p>
+                
+                <ul class="quick-highlights">
+                    <li><i class="fas fa-check"></i> Proven Academic Success Track</li>
+                    <li><i class="fas fa-check"></i> Advanced Learning Infrastructure</li>
+                    <li><i class="fas fa-check"></i> Holistic Student Development</li>
+                </ul>
+
+                <!-- 🌐 Outbound Gateway to About Page -->
+                <a href="about.html" class="btn-about-gateway">
+                    LEARN MORE ABOUT US <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 🟥 FOOTER SECTION -->
+    <footer class="digital-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+              <h3>PATLA KHAWA <span>HIGH SCHOOL</span></h3>
+                <p>Nurturing brilliance, innovation, and digital-first education for a brighter tomorrow.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect Portal</h4>
+                <div class="social-wrapper">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Patla Khawa High School. Engineered for excellence.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

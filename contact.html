@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Patla Khawa High School</title>
+    
+    <!-- Global Styles & Font Awesome -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* --- CONTACT PAGE INTERNAL STYLES --- */
+        .contact-section { padding: 80px 8%; width: 100%; box-sizing: border-box; }
+        .contact-container { 
+            max-width: 600px; 
+            margin: 0 auto; 
+            background: var(--panel-dark); 
+            padding: 40px; 
+            border-radius: 12px; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+        }
+
+        .contact-header { text-align: center; margin-bottom: 30px; }
+        .contact-header h2 { color: var(--text-bright); }
+        .contact-header span { color: var(--neon-cyan); }
+
+        .input-group { margin-bottom: 20px; display: flex; flex-direction: column; gap: 8px; }
+        label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; }
+
+        input, textarea {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 14px;
+            border-radius: 8px;
+            color: var(--text-bright);
+            text-align: center;
+            outline: none;
+        }
+
+        input::placeholder, textarea::placeholder { text-align: center; color: rgba(255, 255, 255, 0.3); }
+
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            background: var(--neon-blue);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+        <!-- 🟥 HEADER SECTION -->
+    <header class="digital-header">
+        <div class="logo-area">
+            <div class="logo-icon"></div>
+            <h2>PATLA KHAWA <span class="school-tag">HIGH SCHOOL</span></h2>
+        </div>
+        
+        <!-- Navigation Links (All sections included) -->
+        <nav class="nav-container" id="navContainer">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item "><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="teachers.html" class="nav-item"><i class="fas fa-chalkboard-teacher"></i> Teacher</a></li>
+                <li><a href="gallery.html" class="nav-item"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="admission.html" class="nav-item"><i class="fas fa-graduation-cap"></i> Admission</a></li>
+                <li><a href="#contact" class="nav-item active"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="about.html" class="nav-item"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </ul>
+            
+            <!-- 📍 Log In & Sign Up (Perfectly Centered Inside Mobile Menu) -->
+            <div class="auth-group mobile-only">
+                <a href="#login" class="btn-signup">Log In</a>
+                <a href="#signup" class="btn-signup">Sign Up</a>
+            </div>
+        </nav>
+
+        <!-- Right Side Controls (Desktop Auth + Profile Picture Link) -->
+        <div class="header-controls">
+            <div class="auth-group desktop-only">
+                <a href="#login" class="btn-signup">Log In</a>
+            </div>
+            
+            <!-- 👤 User Profile Picture Slot -->
+            <a href="#profile" class="profile-link" title="User Profile">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Profile" class="profile-pic">
+            </a>
+
+            <!-- Animated Hamburger Menu Icon -->
+            <div class="hamburger-menu" id="hamburgerBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>GET IN <span>TOUCH</span></h2>
+            </div>
+
+            <!-- Web3Forms Integration -->
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- Replace with your actual Access Key -->
+                <input type="hidden" name="access_key" value="877cda9c-851f-44e9-ba11-05fd9a1f9271">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea name="message" rows="5" placeholder="Write your message here..."></textarea>
+                </div>
+
+                <!-- Spam Protection -->
+                <input type="checkbox" name="botcheck" style="display: none;">
+
+                <button type="submit" class="btn-submit">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- 🟥 FOOTER SECTION -->
+    <footer class="digital-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>PATLA KHAWA <span>HIGH SCHOOL</span></h3>
+                <p>Nurturing brilliance, innovation, and digital-first education for a brighter tomorrow.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect Portal</h4>
+                <div class="social-wrapper">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Patla Khawa High School. Engineered for excellence.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

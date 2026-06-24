@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Patla Khawa High School</title>
+    <!-- Link to your main CSS for global Header/Footer/Variables -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Internal Page Styles for Gallery */
+        .gallery-page-section { padding: 80px 8%; width: 100%; box-sizing: border-box; }
+        .gallery-header { text-align: center; margin: 40px 0; }
+        .gallery-header h2 { font-size: 32px; color: var(--text-bright); }
+        
+        /* The Responsive Image Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+            gap: 15px;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        
+        .gallery-item {
+            background: var(--panel-dark);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            aspect-ratio: 1 / 1; /* Makes every frame a perfect square */
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item img,
+        .gallery-item iframe,
+        .gallery-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img { transform: scale(1.1); }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 900px) {
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        .gallery-item video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item:hover video{
+            transform: scale(1.05);
+            transition: transform 0.5s ease;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="digital-header">
+        <div class="logo-area">
+            <div class="logo-icon"></div>
+            <h2>PATLA KHAWA <span class="school-tag">HIGH SCHOOL</span></h2>
+        </div>
+        
+        <!-- Navigation Links (All sections included) -->
+        <nav class="nav-container" id="navContainer">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item "><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="teachers.html" class="nav-item"><i class="fas fa-chalkboard-teacher"></i> Teacher</a></li>
+                <li><a href="#gallery" class="nav-item active"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="admission.html" class="nav-item"><i class="fas fa-graduation-cap"></i> Admission</a></li>
+                <li><a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="about.html" class="nav-item"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </ul>
+            
+            <!-- 📍 Log In & Sign Up (Perfectly Centered Inside Mobile Menu) -->
+            <div class="auth-group mobile-only">
+                <a href="#login" class="btn-signup">Log In</a>
+                <a href="#signup" class="btn-signup">Sign Up</a>
+            </div>
+        </nav>
+
+        <!-- Right Side Controls (Desktop Auth + Profile Picture Link) -->
+        <div class="header-controls">
+            <div class="auth-group desktop-only">
+
+                <a href="#signup" class="btn-signup">Log In</a>
+            </div>
+            
+            <!-- 👤 User Profile Picture Slot -->
+            <a href="#profile" class="profile-link" title="User Profile">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Profile" class="profile-pic">
+            </a>
+
+            <!-- Animated Hamburger Menu Icon -->
+            <div class="hamburger-menu" id="hamburgerBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+    
+
+    <section class="gallery-page-section">
+        
+        <!-- PHOTOS SECTION -->
+        <div class="gallery-header"><h2>SCHOOL PHOTOS</h2></div>
+        <div class="gallery-grid">
+            
+            <div class="gallery-item">
+                <img src="School_1.jpg" alt="Gallery Image">
+            </div>
+            
+             <div class="gallery-item">
+                <img src="School_2.jpg" alt="Gallery Image">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="School_3.jpg" alt="Gallery Image">
+            </div>
+            <div class="gallery-item">
+                <img src="School_4.jpg" alt="Gallery Image">
+            </div>
+            <div class="gallery-item">
+                <img src="School_5.jpg" alt="Gallery Image">
+            </div>
+            <div class="gallery-item">
+                <img src="School_6.jpg" alt="Gallery Image">
+            </div>
+            <div class="gallery-item">
+                <img src="School_7.jpg" alt="Gallery Image">
+            </div>
+            <div class="gallery-item">
+                <img src="School_8.jpg" alt="Gallery Image">
+            </div>
+            <div class="gallery-item">
+                <img src="School_9.jpg" alt="Gallery Image">
+            </div>
+            <div class="gallery-item">
+                <img src="School_10.jpg" alt="Gallery Image">
+            </div>
+            <div class="gallery-item">
+                <img src="School_11.jpg" alt="Gallery Image">
+            </div>
+            <div class="gallery-item">
+                <img src="School_12.jpg" alt="Gallery Image">
+            </div>
+            <div class="gallery-item">
+                <img src="School_13.jpg" alt="Gallery Image">
+            </div>
+            <div class="gallery-item">
+                <img src="School_14.jpg" alt="Gallery Image">
+            </div>
+
+        </div>
+
+    <!-- VIDEOS SECTION -->
+    <div class="gallery-header">
+        <h2>SCHOOL VIDEOS</h2>
+    </div>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <video controls>
+                <source src="School_video1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="gallery-item">
+            <video controls>
+                <source src="School_video2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="gallery-item">
+            <video controls>
+                <source src="School_video3(2).mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="gallery-item">
+            <video controls>
+                <source src="School_video4.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    </section>
+    
+   <!-- 🟥 FOOTER SECTION -->
+    <footer class="digital-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>PATLA KHAWA <span>HIGH SCHOOL</span></h3>
+                <p>Nurturing brilliance, innovation, and digital-first education for a brighter tomorrow.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect Portal</h4>
+                <div class="social-wrapper">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Patla Khawa High School. Engineered for excellence.</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
